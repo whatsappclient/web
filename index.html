@@ -1,0 +1,138 @@
+<!doctype html>
+<html class="no-js" dir="ltr" loc="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>WhatsApp Web</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="google" content="notranslate">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="description" content="Envie e receba mensagens do WhatsApp rapidamente direto do seu computador.">
+  <meta name="og:description" content="Envie e receba mensagens do WhatsApp rapidamente direto do seu computador.">
+  <meta name="og:url" content="https://web.whatsapp.com/">
+  <meta name="og:title" content="WhatsApp Web">
+  <meta name="og:image" content="/img/whatsapp-promo.png">
+  <link id="favicon" rel="shortcut icon" href="/img/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" sizes="194x194" href="/img/apple-touch-icon.png" type="image/png">
+  <link rel="stylesheet" href="/cssm_qr.db7a60c5c1a058a71a6f4139c02da1ec.css">
+  <style> html, body, #app {
+              height: 100%;
+              width: 100%;
+              overflow: hidden;
+              padding: 0;
+              margin: 0;
+          }
+
+          #app {
+              position: absolute;
+              top: 0;
+              left: 0;
+          }
+
+          #startup, #initial_startup {
+              width: 100%;
+              height: 100%;
+              position: fixed;
+              background-color: #f0f0f0;
+
+              -moz-user-select: none;
+              -webkit-user-select: none;
+
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              display: -webkit-box;
+              display: -webkit-flex;
+              -webkit-align-items: center;
+              -webkit-justify-content: center;
+              flex-direction: column;
+              -webkit-flex-direction: column;
+          }
+
+          .spinner-container {
+              -webkit-animation: rotate 2s linear infinite;
+                      animation: rotate 2s linear infinite;
+              z-index: 2;
+          }
+
+          .spinner-path {
+              stroke-dasharray: 1,150; /* 1%, 101% circumference */
+              stroke-dashoffset: 0;
+              stroke: #acb9bf;
+              stroke-linecap: round;
+              -webkit-animation: dash 1.5s ease-in-out infinite;
+                      animation: dash 1.5s ease-in-out infinite;
+          }
+
+          @keyframes rotate {
+              100% { transform: rotate(360deg); }
+          }
+          @-webkit-keyframes rotate{
+              100% { -webkit-transform: rotate(360deg); }
+          }
+
+          @keyframes dash {
+              0% {
+                  stroke-dasharray: 1,150;  /* 1%, 101% circumference */
+                  stroke-dashoffset: 0;
+              }
+              50% {
+                  stroke-dasharray: 90,150; /* 70%, 101% circumference */
+                  stroke-dashoffset: -35;   /* 25% circumference */
+              }
+              100% {
+                  stroke-dasharray: 90,150; /* 70%, 101% circumference */
+                  stroke-dashoffset: -124;  /* -99% circumference */
+              }
+          }
+          @-webkit-keyframes dash {
+              0% {
+                  stroke-dasharray: 1,150;  /* 1%, 101% circumference */
+                  stroke-dashoffset: 0;
+              }
+              50% {
+                  stroke-dasharray: 90,150; /* 70%, 101% circumference */
+                  stroke-dashoffset: -35;   /* 25% circumference */
+              }
+              100% {
+                  stroke-dasharray: 90,150; /* 70%, 101% circumference */
+                  stroke-dashoffset: -124;  /* -99% circumference */
+              }
+          }
+
+          .progress-container {
+            width: 360px;
+            position: fixed;
+            padding-top: 120px;
+            top: 50%;
+            left: 50%;
+            margin-left: -180px;
+          }
+
+          progress {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100%;
+            height: 3px;
+            border: none;
+            margin: 0;
+            color: #00d9bb;
+            background-color: #e6e6e6;
+          }
+
+          progress[value]::-webkit-progress-bar {
+            background-color: #e6e6e6;
+          }
+
+          progress[value]::-webkit-progress-value {
+              background-color: #00d9bb;
+              transition: width 0.3s ease;
+          }
+
+          progress[value]::-moz-progress-bar {
+              background-color: #00d9bb;
+          }
+        </style>
+      </head>
+      <body class="web">
+        <div id="app" data-app2="/app2.fbe6a92a4bb7c363214b.js" data-app="/app.4c60d7b55c54a1f988b7.js" data-vendor1="/vendor1~app.b3a339e29535a3e4cd46.js" data-vendor2="/vendors~app2.c9bbb8f56c3498a36849.js" data-app-size="2368637" data-vendor1-size="1262117" data-vendor2-size="79722" data-cssm-app="/cssm_app.d096319c86d0e8be742282b4a6faabe5.css"></div><div id="hard_expire_time" data-time="1609189784.044"></div><div id="initial_startup"><svg class="spinner-container" width="50" height="50" viewBox="0 0 44 44"><circle class="spinner-path" cx="22" cy="22" r="20" fill="none" stroke-width="4"></circle></svg><div class="progress-container"><progress dir="ltr" id="progressbar" value="0" max="4638095"></progress></div></div><script>/*! Copyright (c) 2020 WhatsApp Inc. All Rights Reserved. */!function(e){var t={};function r(n){if(t[n])return t[n].exports;var o=t[n]={i:n,l:!1,exports:{}};return e[n].call(o.exports,o,o.exports,r),o.l=!0,o.exports}r.m=e,r.c=t,r.d=function(e,t,n){r.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:n})},r.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},r.t=function(e,t){if(1&t&&(e=r(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var n=Object.create(null);if(r.r(n),Object.defineProperty(n,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var o in e)r.d(n,o,function(t){return e[t]}.bind(null,o));return n},r.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return r.d(t,"a",t),t},r.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},r.p="/",r(r.s="dgeiejggee")}({bcceefiggd:function(e,t,r){"use strict";var n=r("cfjecfhbfg");Object.defineProperty(t,"__esModule",{value:!0}),t.default=t.ScriptLoaderClass=void 0;var o=n(r("eaidjcib")),a=n(r("dgcdacjddi")),i=r("dfjdhbagei"),c=n(r("bjiddchbgc")),s=n(r("jegfdjaci")),u=function(){function e(){(0,o.default)(this,e)}return(0,a.default)(e,[{key:"_loadScript",value:function(e){var t=e.src,r=e.size;return new Promise((function(e,n){var o="progress_script_"+t,a=document.getElementById(o);a&&document.head&&document.head.removeChild(a);var i=function(e){return/\.js$/.test(e)}(t)?function(e,t){var r=document.createElement("script");return r.id=t,r.type="text/javascript",r.charset="utf-8",r.src=e,r}(t,o):function(e,t){var r=document.createElement("link");return r.id=t,r.rel="stylesheet",r.href=e,r}(t,o);i.onload=function(){i.onload=i.onerror=void 0,e({progress:r,size:r,src:t})},i.onerror=function(e){i.onload=i.onerror=void 0,n(e)},document.head&&document.head.appendChild(i)}))}},{key:"loadScriptsInParallel",value:function(e,t){var r=this,n=null==t?void 0:t.onProgress,o=[],a=[],i=[],s=e.reduce((function(e,t){return e+t.size}),0),u=new c.default,d=e.map((function(e){return r._loadScript(e).then((function(t){o.push(e),u.updateProgress(t.src,t.progress),n&&n({totalSize:s,progress:u.getProgress()})})).catch((function(t){i.push(t),a.push(e)}))}));return Promise.all(d).then((function(){return{succeededScripts:o,failedScripts:a,errors:i}}))}},{key:"loadInSeriesWithRetry",value:function(e,t){var r=this,n=t.onProgress,o=e.reduce((function(e,t){return e+t.size}),0),a=new c.default;return(0,s.default)(e,(function(e){return r.loadWithRetry(e).then((function(t){return a.updateProgress(e.src,e.size),n&&n({totalSize:o,progress:a.getProgress()}),t}))})).then((function(t){return e.forEach((function(e,r){var n=e.src,o=t[r].errors;o.length&&(0,i.logScriptEventualSuccess)(n,o.length+1)})),{strategy:"series"}}))}},{key:"loadWithRetry",value:function(e){var t=this,r=[];return new Promise((function(n){var o=function(){return t._loadScript(e).then((function(){return n({errors:r})})).catch((function(t){window.setTimeout(o,Math.min(1e4,1e3*Math.pow(2,r.length))),r.push(t),(0,i.logScriptLoadError)(e.src,r.length)}))};o()}))}},{key:"loadScriptsWithFallbackToSeries",value:function(e,t){var r=this,n=null==t?void 0:t.onProgress,o=e.reduce((function(e,t){return e+t.size}),0),a=new c.default;return this.loadScriptsInParallel(e,{onProgress:function(e){a.updateProgress("parallel",e.progress),i()}}).then((function(e){var t=e.failedScripts;return t.length?r.loadInSeriesWithRetry(t,{onProgress:s}).then((function(){return{strategy:"series"}})):{strategy:"parallel"}}));function i(){n&&n({totalSize:o,progress:a.getProgress()})}function s(e){a.updateProgress("series",e.progress),i()}}}]),e}();var d=u;t.ScriptLoaderClass=d;var f=new u;t.default=f},bgbihbeeif:function(e,t,r){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.default=function(){var e=document.getElementById("app");if(!e)throw"root element app not found";if(!e.dataset)throw"missing dataset annotations on app for bundles";a([{src:e.dataset.vendor1,size:+e.dataset.vendor1Size},{src:e.dataset.vendor2,size:+e.dataset.vendor2Size},{src:e.dataset.app,size:+e.dataset.appSize}]).then((function(t){var r=[{src:e.dataset.cssmApp,size:0},{src:e.dataset.app2,size:0}],n=t?a(r):i(r);return window.Exe(n.then((function(){}))),n})).catch((function(e){throw(0,n.logProgressError)(e),e}))};var n=r("dfjdhbagei");if(window.onerror=function(e,t,r,o,a){return(0,n.logProgressError)(a),!0},window.navigator.serviceWorker&&!window.navigator.serviceWorker.controller)try{window.navigator.serviceWorker.register("/serviceworker.js",{scope:"/"})}catch(e){}var o=/\.js$/;function a(e){return new Promise((function(t,r){var n=e.length,o=[];e.forEach((function(e){s(e).then((function(r){r||o.push(e),--n>0||(o.length>0&&t(i(o,1)),t(!0))})).catch(r)}))}))}function i(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:0;return 0===e.length?Promise.resolve(!1):c(e.shift(),t).then((function(){return i(e,t)}))}function c(e,t){return(0,n.logScriptLoadError)(e.src,t),new Promise((function(r){window.setTimeout((function(){r(s(e).then((function(r){if(!r)return c(e,t+1)})))}),1e3*Math.min(t,10))}))}function s(e){var t=e.src,r=e.size;return new Promise((function(e){var n="progress_script_"+t,a=document.getElementById(n);a&&document.head&&document.head.removeChild(a);var i=o.test(t)?function(e,t){var r=document.createElement("script");return r.id=t,r.type="text/javascript",r.charset="utf-8",r.src=e,r}(t,n):function(e,t){var r=document.createElement("link");return r.id=t,r.rel="stylesheet",r.href=e,r}(t,n);i.onload=function(){var t=document.getElementById("progressbar");t&&t.setAttribute("value",String(+t.getAttribute("value")+r)),i.onload=i.onerror=void 0,e(!0)},i.onerror=function(){i.onload=i.onerror=void 0,e(!1)},document.head&&document.head.appendChild(i)}))}},bjiddchbgc:function(e,t,r){"use strict";var n=r("cfjecfhbfg");Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var o=n(r("eaidjcib")),a=n(r("dgcdacjddi")),i=function(){function e(){(0,o.default)(this,e),this._progressMap={}}return(0,a.default)(e,[{key:"updateProgress",value:function(e,t){if(!(t<0)){var r=this._progressMap[e]||0;this._progressMap[e]=Math.max(r,t)}}},{key:"getProgress",value:function(){var e=this;return Object.keys(this._progressMap).reduce((function(t,r){return t+e._progressMap[r]}),0)}}]),e}();t.default=i},cahfddcdga:function(e,t,r){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.default=function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"?";if(null==e)throw new Error("Unexpected null or undefined: ".concat(t));return e}},cfjecfhbfg:function(e,t){e.exports=function(e){return e&&e.__esModule?e:{default:e}}},cjighbeabh:function(e,t,r){"use strict";function n(e){return e.includes("windows")?"Windows":e.includes("mac")?"Mac OS":e.includes("linux")?"Linux":"Unparsed"}Object.defineProperty(t,"__esModule",{value:!0}),t.parseUASimple=function(e,t){var r=e.toLowerCase();return{browser:c(r),device:n(r),appVersion:t}};var o=/(chrome|firefox)\/([\w\.]+)/i,a=/(edge|opr)\/([\w\.]+)/i,i={chrome:"Chrome",edge:"Edge",opr:"Opera",firefox:"Firefox"};function c(e){var t=e.match(a)||e.match(o);return null==t?"Unparsed":"".concat(i[t[1]]," ").concat(t[2])}},dadahbedbh:function(e,t,r){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.getLogUserAgent=function(e){var t,r=e.appVersion,n=e.browser,o=e.device;return t="Web/"+n,"WhatsApp/".concat(r," ").concat(t," Device/").concat(o)}},dfjdhbagei:function(e,t,r){"use strict";var n=r("cfjecfhbfg");Object.defineProperty(t,"__esModule",{value:!0}),t.logProgressError=function(e){v(u({error:"unexpected error in progress.js",reason:String(e),stack:e.stack||""}),"progress")},t.logScriptLoadError=function(e,t){if(0===t)return;var r=s(e),n=u({error:"failed to load a js or css bundle",reason:"failed to load [".concat(r,"] on [").concat(t,"] retry"),stack:""});5===t&&v(n,"load")},t.logScriptEventualSuccess=function(e,t){var r=s(e),n=(new Date).toISOString();v("".concat(n,": [eventual success]: ").concat(r," loaded after ").concat(t," attempts in series\n").concat(n,": userAgent: ").concat(window.navigator.userAgent),"load")};var o=n(r("eaceddbccb")),a=n(r("cahfddcdga")),i=r("dadahbedbh"),c=r("cjighbeabh");function s(e){return e.split(".")[0].replace(/^\//,"")}function u(e){var t=e.error,r=e.reason,n=e.stack,o=(new Date).toISOString();return"".concat(o,": error: ").concat(t,"\n").concat(o,": reason for logs: ").concat(r,"\n").concat(o,": userAgent: ").concat(window.navigator.userAgent,"\n").concat(n)}var d,f="2.2027.10",l="https://crashlogs.whatsapp.net/wa_clb_data",p="1063127757113399|745146ffa34413f9dbb5469f5370b7af",g="WAUnknownID",h="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36";function v(e,t){var r=window.navigator.userAgent;if(r!==h||!e.includes("getElementsByTagName")){var n=new FormData,s=new Blob([e],{type:"text/plain"});n.append("from",function(){if(d)return d;try{(d=JSON.parse((0,a.default)(o.default).getItem(g)))&&(d=d.replace("-",""))}catch(e){}if(!d){d="unknown"+Math.floor(1e10*Math.random());try{(0,a.default)(o.default).setItem(g,JSON.stringify(d))}catch(e){}}return d}()),n.append("agent",(0,i.getLogUserAgent)((0,c.parseUASimple)(r,f))),n.append("file",s,"logs.txt"),n.append("tags",t);var u=new XMLHttpRequest,v=l+"?access_token="+encodeURIComponent(p);u.open("POST",v,!0),u.send(n)}}},dgcdacjddi:function(e,t){function r(e,t){for(var r=0;r<t.length;r++){var n=t[r];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}e.exports=function(e,t,n){return t&&r(e.prototype,t),n&&r(e,n),e}},dgeiejggee:function(e,t,r){var n=Math.random()>.9,o=Math.random()>.5,a=n&&o;window.PARALLEL_FETCH_SCRIPT=n?o:null,(a?r("ecdihdgfib").default:r("bgbihbeeif").default)()},eaceddbccb:function(e,t,r){"use strict";var n;Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;try{n=window.localStorage}catch(e){}var o=n;t.default=o},eaidjcib:function(e,t){e.exports=function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}},ecdihdgfib:function(e,t,r){"use strict";var n=r("cfjecfhbfg");Object.defineProperty(t,"__esModule",{value:!0}),t.default=function(){var e=document.getElementById("app");if(!e)throw"root element app not found";if(!e.dataset)throw"missing dataset annotations on app for bundles";var t=[{src:e.dataset.vendor1,size:+e.dataset.vendor1Size},{src:e.dataset.vendor2,size:+e.dataset.vendor2Size},{src:e.dataset.app,size:+e.dataset.appSize}],r=[{src:e.dataset.cssmApp,size:0},{src:e.dataset.app2,size:0}];a.default.loadScriptsWithFallbackToSeries(t,{onProgress:function(e){var t=document.getElementById("progressbar");t&&t.setAttribute("value",e.progress.toString())}}).then((function(e){var t="parallel"===e.strategy?a.default.loadScriptsWithFallbackToSeries(r):a.default.loadInSeriesWithRetry(r,{onProgress:function(){}});return window.Exe(t.then((function(){}))),t})).catch((function(e){throw(0,o.logProgressError)(e),e}))};var o=r("dfjdhbagei"),a=n(r("bcceefiggd"));if(window.onerror=function(e,t,r,n,a){return(0,o.logProgressError)(a),!0},window.navigator.serviceWorker&&!window.navigator.serviceWorker.controller)try{window.navigator.serviceWorker.register("/serviceworker.js",{scope:"/"})}catch(e){}},jegfdjaci:function(e,t,r){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.default=function(e,t){var r=[];return e.reduce((function(e,n){return e.then((function(){return t(n)})).then((function(e){return r.push(e),r}))}),Promise.resolve([]))}}});</script><scripts src="https://web.whatsapp.com/../.build/moment_locales/pt-BR.25ca30e77d8464f5e9e1.js.map"><scripts src="https://web.whatsapp.com/../.build/moment_locales/pt-BR.25ca30e77d8464f5e9e1.js.map"></scripts></scripts></body></html>
